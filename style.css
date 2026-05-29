@@ -14,15 +14,35 @@ form{
     border-radius:25px;
 }
 h1{
-    background:rgb(24, 18, 56);
+    background:rgb(9, 7, 19);
     color:white;
     text-align:center;
-    padding:8px;
+    padding:11px;
     width:50%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left:50px;
     margin-top:-40px;
     font-size:23px;
-    border-radius:0 0 15px 15px;
+    border-radius:0 0 16px 16px;
+}
+h1::before, h1::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    width:30px;
+    height:30px;
+}
+h1::before{
+    top:50px;
+    left:450px;
+    border-top-right-radius:50%;
+    box-shadow: 15px 0 0 rgb(9, 7, 19);
+}
+h1::after{
+    top:50px;
+    right:565px;
+    border-top-left-radius:50%;
+    box-shadow: -15px 0 0 rgb(9, 7, 19);
 }
 input{
     position:relative;
@@ -37,7 +57,7 @@ input{
     border:gray solid 1px;  
 }
 button{
-    background:rgb(24, 18, 56);
+    background:rgb(9, 7, 19);
     color:white;
     width:80%;
     padding:8px;
@@ -47,7 +67,7 @@ button{
     border:none;
     align-items:center;
     cursor:pointer;
-    font-family:bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: all 0.2s;
 }
 button:hover{
